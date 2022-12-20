@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Secular One', sans-serif;
+}
+
+/* ESTILOS NAV */
+:root{
+    --color-primario: #be55d0;
+    --color-secuandrio: #082BA5;
+    --color-sombras: #ff3847;
+    --color-titulos: #090909;
+    --color-text: #090909;
+    --color-fondo: #fcfcfc;
+}
+
+header{
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 0 3px var(--color-sombras);
+
+}
+nav{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:0;
+
+}
+.menu .logo img{
+    height: 60px;
+    width: 150px;
+}
+.menu .btn-menu{
+    display: none;
+    color: var(--color-primario);
+    text-decoration: none;
+    font-size: 1.6em;
+
+}
+.menu .enlaces a{
+    text-decoration: none;
+    color: var(--color-text);
+    display: inline-block;
+    padding: 1.6em;
+    text-align: center;
+    font-size: .8em;
+    text-transform: uppercase;
+
+
+} 
+.menu .enlaces a:hover{
+    color: var(--color-primario);
+}
+
+/* interactividad js */
+.headroom {
+    will-change: transform;
+    transition: transform 0.3s ease;
+}
+.headroom--pinned {
+    transform: translateY(0%);
+}
+.headroom--unpinned {
+    transform: translateY(-100%);
+}
+
+
+/* estilos css para movil: utilizando responsive web design */
+@media screen and (max-width: 1023px){
+
+    header .menu{
+        flex-direction: column;
+    }
+
+    header .menu .logo{
+        display: flex;
+        flex-direction: row;
+
+                         /* separacion */
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    header .menu .logo .btn-menu{
+        display: inline-block;
+        margin-top: .4em;
+    }
+
+    header .menu .enlaces{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+.titulo{
+    text-align: center;
+    text-shadow:2px 2px var(--color-sombras);
+}
