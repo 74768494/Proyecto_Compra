@@ -11,7 +11,7 @@
     --color-secuandrio: #082BA5;
     --color-sombras: #ff3847;
     --color-titulos: #090909;
-    --color-text: #090909;
+    --color-text: #8c52ff;
     --color-fondo: #fcfcfc;
 }
 
@@ -106,3 +106,20 @@ nav{
     text-align: center;
     text-shadow:2px 2px var(--color-sombras);
 }
+h3{
+    margin-left: 150px;
+    color: var(--color-text);
+    text-shadow:2px 2px var(--color-sombras);
+}
+.contenido{
+    text-align: center; 
+}
+.imagen{
+    border-radius: 15px;
+}
+.imagen:hover{
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+
